@@ -20,6 +20,7 @@ const disciplinesList = [
   'Cross Country',
   'Flat Racing',
   'Saddle Seat',
+  'Reinning',
   'Rodeo',
   'Horse Agility',
   'Campdrafting',

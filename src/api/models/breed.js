@@ -13,7 +13,12 @@ const breedSchema = new mongoose.Schema(
       }
     ],
     img: { type: String, required: true },
-    bestDiscipline: { type: String, required: true, trim: true }
+    bestDiscipline: {
+      type: mongoose.Types.ObjectId,
+      ref: 'disciplines',
+      required: true,
+      trim: true
+    }
   },
   {
     timestamps: true

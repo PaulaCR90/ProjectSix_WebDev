@@ -164,7 +164,7 @@ const breedsList = [
   'Oldenburg',
   'Oldenburg show jumper',
   'Orlov Trotter',
-  'P.R.E',
+  'PRE',
   'Paint',
   'Palomino',
   'Paso Fino',

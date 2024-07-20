@@ -1,12 +1,17 @@
 const mongoose = require('mongoose');
-const breedsList = require('../../data/breedsList');
+//const breedsList = require('../../data/breedsList');
 const disciplinesList = require('../../data/disciplinesList');
 
 const disciplineSchema = new mongoose.Schema({
   name: { type: String, required: true, trim: true, enum: disciplinesList },
   description: { type: String, required: true, trim: true },
   olympic: { type: String, enum: ['yes', 'no'], required: true, trim: true },
-  bestBreeds: { type: String, enum: breedsList, trim: true }
+  bestBreeds: [
+    {
+      type: mongoose.Types.ObjectId,
+      ref: 'breeds'
+    }
+  ]
 });
 
 const Discipline = mongoose.model(
