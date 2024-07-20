@@ -90,7 +90,7 @@ npm run start
 ```
 
 Para ejecutar la semilla:
-⚠️**¡Cuidado!** Esta es una acción irreversible ⚠️
+⚠️ **¡Cuidado!** Esta es una acción irreversible ⚠️
 
 ```
 npm run seed
